@@ -46,6 +46,7 @@ byte currentBrightness = STARTBRIGHTNESS; // 0-255 will be scaled to 0-MAXBRIGHT
 #include "font.h"
 #include "XYmap.h"
 #include "utils.h"
+#include "palettes.h"
 #include "effects.h"
 #include "buttons.h"
 
@@ -66,18 +67,20 @@ void setup() {
 }
 
 // list of functions that will be displayed
-functionList effectList[] = {scrollTextZero,
+functionList effectList[] = {pride,
+                             colorwaves,
+                             scrollTextZero,
                              scrollTextOne,
                              scrollTextTwo,
                              threeSine,
-                             threeDee,
                              plasma,
                              confetti,
                              rider,
                              glitter,
                              slantBars,
                              colorFill,
-                             sideRain };
+                             sideRain,
+                             threeDee};
 
 // Timing parameters
 #define cycleTime 15000
@@ -146,8 +149,4 @@ void loop()
   FastLED.show(); // send the contents of the led memory to the LEDs
 
 }
-
-
-
-
 
