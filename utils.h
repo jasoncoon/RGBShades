@@ -10,7 +10,7 @@ unsigned long hueMillis; // store time of last hue change
 byte currentEffect = 0; // index to the currently running effect
 boolean autoCycle = true; // flag for automatic effect changes
 
-CRGBPalette16 currentPalette(RainbowColors_p); // global pallete storage
+CRGBPalette16 currentPalette(RainbowColors_p); // global palette storage
 
 
 typedef void (*functionList)(); // definition for list of effect function pointers

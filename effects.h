@@ -315,7 +315,7 @@ void scrollText(byte message, byte style, CRGB fgColor, CRGB bgColor) {
 
 
 void scrollTextZero() {
-  scrollText(0, NORMAL, CRGB::Red, CRGB::Black);
+  scrollText(0, RAINBOW, 0, CRGB::Black);
 }
 
 void scrollTextOne() {
@@ -323,6 +323,6 @@ void scrollTextOne() {
 }
 
 void scrollTextTwo() {
-  scrollText(2, NORMAL, CRGB::Green, CRGB(0,0,8));
+  scrollText(2, RAINBOW, 0, CRGB::Black);
 }
 

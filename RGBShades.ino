@@ -66,16 +66,16 @@ void setup() {
 }
 
 // list of functions that will be displayed
-functionList effectList[] = {threeSine,
+functionList effectList[] = {scrollTextZero,
+                             scrollTextOne,
+                             scrollTextTwo,
+                             threeSine,
                              threeDee,
-                             scrollTextZero,
                              plasma,
                              confetti,
                              rider,
-                             scrollTextOne,
                              glitter,
                              slantBars,
-                             scrollTextTwo,
                              colorFill,
                              sideRain };
 
