@@ -138,6 +138,8 @@ void loop()
   // run a fade effect too if the confetti effect is running
   if (effectList[currentEffect] == confetti) fadeAll(1);
 
+  if(effectList[currentEffect] == fireworks) return;
+  
   FastLED.show(); // send the contents of the led memory to the LEDs
 
 }

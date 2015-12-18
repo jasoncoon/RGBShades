@@ -336,6 +336,12 @@ void scrollTextTwo() {
 // widely-varying set of parameters.
 void pride() 
 {
+  // startup tasks
+  if (effectInit == false) {
+    effectInit = true;
+    effectDelay = 0;
+  }
+  
   static uint16_t sPseudotime = 0;
   static uint16_t sLastMillis = 0;
   static uint16_t sHue16 = 0;
@@ -406,6 +412,12 @@ CRGBPalette16 gTargetPalette( gGradientPalettes[0] );
 // widely-varying set of parameters, using a color palette.
 void drawcolorwaves( CRGB* ledarray, uint16_t numleds, CRGBPalette16& palette) 
 {
+  // startup tasks
+  if (effectInit == false) {
+    effectInit = true;
+    effectDelay = 0;
+  }
+  
   static uint16_t sPseudotime = 0;
   static uint16_t sLastMillis = 0;
   static uint16_t sHue16 = 0;
@@ -457,6 +469,12 @@ void drawcolorwaves( CRGB* ledarray, uint16_t numleds, CRGBPalette16& palette)
 
 void colorwaves()
 {
+  // startup tasks
+  if (effectInit == false) {
+    effectInit = true;
+    effectDelay = 0;
+  }
+  
   EVERY_N_SECONDS( SECONDS_PER_PALETTE ) {
     gCurrentPaletteNumber = addmod8( gCurrentPaletteNumber, 1, gGradientPaletteCount);
     gTargetPalette = gGradientPalettes[ gCurrentPaletteNumber ];
